@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Usability Engineering & User Experience</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="#top">usability</a>
+  <nav>
+    <a href="#pengenalan">Pengenalan</a><a href="#atribut">Atribut</a>
+    <a href="#metode">Metode</a><a href="#siklus">Siklus</a><a href="#tim">Tim</a>
+  </nav>
+  <a class="btn" href="#pengenalan">Mulai belajar</a>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-text">
+      <a class="pill" href="#siklus">Modul baru: Siklus hidup usability &rsaquo;</a>
+      <h1 class="display">Sistem yang bagus mudah dipakai.</h1>
+      <p class="lead">Materi Usability Engineering &amp; User Experience: cara mengukur, menguji, dan memperbaiki antarmuka agar efektif, efisien, dan memuaskan.</p>
+      <div class="row"><a class="btn" href="#pengenalan">Mulai belajar</a><a class="link" href="#metode">Lihat metode pengukuran &rsaquo;</a></div>
+    </div>
+    <div class="stage" id="stage" aria-label="Kubus Rubik interaktif">
+      <div class="scene"><div class="cube" id="cube"></div></div>
+    </div>
+  </section>
+
+  <section id="pengenalan" class="section reveal hover-cards">
+    <h2>Apa itu usability?</h2>
+    <div class="grid two">
+      <div class="card"><p>Teknologi menuntut aplikasi tidak hanya lengkap fiturnya, tetapi juga mudah digunakan. Sistem dengan tampilan rumit dan navigasi sulit membuat pengguna frustrasi dan enggan kembali.</p>
+        <p>Usability adalah tingkat kemudahan, efisiensi, dan kepuasan pengguna saat berinteraksi dengan sistem (Nielsen, 2012). Evaluasi usability membantu pengembang menemukan hambatan dan membuat sistem lebih ramah pengguna.</p></div>
+      <div class="stack">
+        <div class="card"><h3>Efektivitas</h3><p>Keberhasilan pengguna mencapai tujuan saat memakai perangkat lunak.</p></div>
+        <div class="card"><h3>Efisiensi</h3><p>Kelancaran pengguna dalam mencapai tujuan tersebut.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reveal hover-cards">
+    <h2>Kenapa usability penting?</h2>
+    <div class="grid four">
+      <div class="card"><h3>Kepuasan naik</h3><p>Usability sangat penting karena ketika pengguna dapat mencapai tujuannya dengan mudah, efisien, dan tanpa hambatan.</p></div>
+      <div class="card"><h3>Retensi naik</h3><p>Pengalaman baik membuat pengguna kembali dan menekan churn.</p></div>
+      <div class="card"><h3>Konversi naik</h3><p>Fitur yang mudah ditemukan mendorong pembelian dan pendaftaran.</p></div>
+      <div class="card"><h3>Beban support turun</h3><p>Usability rendah memicu banyak tiket bantuan dan mengurangi kepercayaan.</p></div>
+    </div>
+  </section>
+
+  <section id="atribut" class="section reveal hover-cards">
+    <h2>Lima atribut usability</h2>
+    <div class="grid three">
+      <article class="card"><h3>Learnability</h3><p>Seberapa cepat pengguna baru memahami sistem dan menyelesaikan tugas dasar.</p><code>ikon keranjang belanja = beli</code></article>
+      <article class="card"><h3>Efficiency</h3><p>Seberapa produktif pengguna mahir setelah terbiasa, lewat jalan pintas dan otomatisasi.</p><code>keyboard shortcut di software desain</code></article>
+      <article class="card"><h3>Memorability</h3><p>Seberapa mudah pengguna kembali memakai sistem setelah lama tidak membukanya.</p><code>tombol Simpan selalu di tempat sama</code></article>
+      <article class="card"><h3>Errors</h3><p>Mencegah kesalahan, memudahkan pemulihan, dan menghindari kehilangan data permanen.</p><code>konfirmasi hapus + tempat sampah</code></article>
+      <article class="card"><h3>Satisfaction</h3><p>Seberapa menyenangkan pengalaman secara keseluruhan: estetika, respons, emosi.</p><code>transisi halus, respons cepat</code></article>
+    </div>
+  </section>
+
+  <section class="section reveal">
+    <h2>Langkah-langkah usability</h2>
+    <ol class="steps">
+      <li><div class="tree-content"><b>Tentukan tujuan dan kebutuhan</b><span>Siapa penggunanya dan apa yang mereka butuhkan.</span></div></li>
+      <li><div class="tree-content"><b>Analisis pengguna</b><span>Kemampuan, pengalaman, kebiasaan, dan pemahaman teknologi.</span></div></li>
+      <li><div class="tree-content"><b>Tentukan tugas</b><span>Login, mencari data, transaksi, mencetak laporan.</span></div></li>
+      <li><div class="tree-content"><b>Buat desain antarmuka</b><span>Sederhana, jelas, konsisten, mudah dipahami.</span></div></li>
+      <li><div class="tree-content"><b>Buat prototype</b><span>Rancangan awal untuk melihat interaksi pengguna.</span></div></li>
+    </ol>
+  </section>
+
+  <section id="metode" class="section reveal">
+    <h2>Metode pengukuran</h2>
+    <div class="table" role="list" aria-label="Metrik pengukuran usability">
+      <article class="table-row" role="listitem" tabindex="0" aria-describedby="tip-task-success">
+        <span class="mono">task_success_rate</span><p>Persentase tugas yang berhasil diselesaikan pengguna.</p>
+        <aside class="hover-card" id="tip-task-success" role="tooltip">
+          <span class="hover-card-label">Keberhasilan tugas</span><h3>Task success rate</h3>
+          <p>metrik ini merujuk pada completion rate atau tingkat keberhasilan tugas, yang mengukur proporsi pengguna yang mampu menyelesaikan suatu instruksi secara mandiri tanpa bantuan eksternal maupun kendala berarti. Pengukuran ini memberikan gambaran objektif mengenai seberapa intuitif dan efektif desain antarmuka dalam memandu pengguna mencapai tujuannya.</p>
+          <div class="hover-card-note"><b>Cara membaca</b><span>Nilai yang lebih tinggi menandakan alur dan fitur lebih mudah digunakan.</span></div>
+        </aside>
+      </article>
+      <article class="table-row" role="listitem" tabindex="0" aria-describedby="tip-completion-time">
+        <span class="mono">task_completion_time</span><p>Lama waktu menyelesaikan tugas. Makin cepat dan benar, makin efisien.</p>
+        <aside class="hover-card" id="tip-completion-time" role="tooltip">
+          <span class="hover-card-label">Kecepatan penggunaan</span><h3>Task completion time</h3>
+          <p>Metrik ini merujuk pada task completion time atau durasi penyelesaian tugas, yang mengukur seberapa cepat dan efisien pengguna dapat menuntaskan suatu instruksi dari awal hingga tujuan akhir tercapai. Dalam evaluasi usability, pencatatan waktu ini menjadi indikator utama untuk menilai tingkat efisiensi sistem serta efektivitas alur navigasi yang dirancang. Semakin singkat waktu yang dibutuhkan pengguna tanpa mengorbankan ketepatan hasil.</p>
+          <div class="hover-card-note"><b>Cara membaca</b><span>Bandingkan waktu antarversi, sambil memastikan tugas tetap selesai dengan benar.</span></div>
+        </aside>
+      </article>
+      <article class="table-row" role="listitem" tabindex="0" aria-describedby="tip-error-rate">
+        <span class="mono">error_rate</span><p>Jumlah kesalahan: salah input, salah menu, atau salah halaman.</p>
+        <aside class="hover-card" id="tip-error-rate" role="tooltip">
+          <span class="hover-card-label">Akurasi interaksi</span><h3>Error rate</h3>
+          <p>ini merujuk pada error rate atau tingkat kesalahan pengguna, yang menghitung seluruh kekeliruan yang terjadi selama interaksi berlangsung, baik kesalahan yang berhasil dipulihkan sendiri oleh pengguna maupun yang membuat tugas gagal. Dalam metode pengukuran usability, pencatatan jenis dan frekuensi kesalahan ini berfungsi untuk mengidentifikasi bagian antarmuka yang membingungkan atau rawan memicu kekeliruan (error-prone).</p>
+          <div class="hover-card-note"><b>Cara membaca</b><span>Nilai yang lebih rendah biasanya berarti petunjuk dan pencegahan kesalahan sudah jelas.</span></div>
+        </aside>
+      </article>
+      <article class="table-row" role="listitem" tabindex="0" aria-describedby="tip-learnability">
+        <span class="mono">learnability</span><p>Seberapa mudah pengguna baru mempelajari sistem.</p>
+        <aside class="hover-card" id="tip-learnability" role="tooltip">
+          <span class="hover-card-label">Kemudahan belajar</span><h3>Learnability</h3>
+          <p>Metrik ini merujuk pada learnability atau tingkat kemudahan untuk dipelajari, yang menilai seberapa cepat dan mudah seorang pengguna baru memahami struktur antarmuka serta menyelesaikan tugas dasar pada interaksi pertama mereka. Dalam pengukuran usability, metrik ini sangat krusial untuk mengetahui seberapa intuitif desain antarmuka tanpa perlu memberikan pelatihan khusus atau petunjuk yang rumit.</p>
+          <div class="hover-card-note"><b>Yang bisa diamati</b><span>Waktu belajar, jumlah bantuan yang dibutuhkan, dan keberhasilan pada percobaan awal.</span></div>
+        </aside>
+      </article>
+      <article class="table-row" role="listitem" tabindex="0" aria-describedby="tip-memorability">
+        <span class="mono">memorability</span><p>Apakah pengguna bisa kembali memakai sistem tanpa belajar ulang.</p>
+        <aside class="hover-card" id="tip-memorability" role="tooltip">
+          <span class="hover-card-label">Mudah diingat</span><h3>Memorability</h3>
+          <p>ini merujuk pada memorability atau daya ingat antarmuka, yang mengukur seberapa baik pengguna dapat mempertahankan pemahaman mereka terhadap cara kerja sistem setelah tidak menggunakannya dalam jangka waktu tertentu. Dalam metode pengukuran usability, metrik ini sangat penting untuk menilai apakah struktur navigasi dan elemen desain yang diterapkan cukup intuitif sehingga pengguna tidak perlu melalui proses pembelajaran ulang dari awal.</p>
+          <div class="hover-card-note"><b>Yang bisa diamati</b><span>Kecepatan dan ketepatan saat mengulang tugas setelah tidak menggunakan sistem.</span></div>
+        </aside>
+      </article>
+      <article class="table-row" role="listitem" tabindex="0" aria-describedby="tip-satisfaction">
+        <span class="mono">satisfaction</span><p>Kepuasan pengguna, biasanya lewat kuesioner atau wawancara.</p>
+        <aside class="hover-card" id="tip-satisfaction" role="tooltip">
+          <span class="hover-card-label">Pengalaman pengguna</span><h3>Satisfaction</h3>
+          <p>Metrik ini merujuk pada satisfaction atau tingkat kepuasan pengguna, yang mengukur persepsi, tanggapan emosional, dan perasaan subjektif pengguna setelah berinteraksi dengan sistem. Dalam evaluasi usability, metrik ini umumnya diukur menggunakan kuesioner terstandar untuk melihat seberapa nyaman, puas, dan percaya diri pengguna terhadap pengalaman yang dirasakannya.</p>
+          <div class="hover-card-note"><b>Cara mengukur</b><span>Gunakan kuesioner singkat atau wawancara untuk memahami alasan di balik penilaian.</span></div>
+        </aside>
+      </article>
+    </div>
+  </section>
+
+  <section id="siklus" class="section reveal">
+    <h2>Siklus hidup usability</h2>
+    <ol class="timeline">
+      <li><div class="tree-content"><b>Pahami kebutuhan</b><span>Siapa pengguna dan masalah apa yang mereka hadapi.</span></div></li>
+      <li><div class="tree-content"><b>Tentukan tujuan</b><span>Mudah dipelajari, cepat dipakai, kesalahan rendah.</span></div></li>
+      <li><div class="tree-content"><b>Buat desain</b><span>Rancang antarmuka dari kebutuhan pengguna.</span></div></li>
+      <li><div class="tree-content"><b>Buat prototype</b><span>Gambaran awal sebelum pengembangan penuh.</span></div></li>
+      <li><div class="tree-content"><b>Evaluasi usability</b><span>Uji keberhasilan tugas, waktu, kesalahan, kepuasan.</span></div></li>
+      <li><div class="tree-content"><b>Analisis hasil</b><span>Temukan masalah dan penyebabnya.</span></div></li>
+      <li><div class="tree-content"><b>Perbaiki</b><span>Revisi desain atau fitur sesuai hasil evaluasi.</span></div></li>
+      <li><div class="tree-content"><b>Uji kembali</b><span>Pastikan masalah sebelumnya teratasi.</span></div></li>
+      <li><div class="tree-content"><b>Implementasi dan pantau</b><span>Kebutuhan pengguna bisa berubah, jadi terus dipantau.</span></div></li>
+    </ol>
+  </section>
+
+  <section id="tim" class="section reveal hover-cards">
+    <h2>Dibuat oleh</h2>
+    <div class="grid three team">
+      <div class="card person"><div class="avatar" data-i="DB"><img src="gambar/budi.jpg" alt="Daffa Budiananta" onerror="this.remove()"></div><h3>Daffa Budiananta</h3><p>Penyusun materi</p></div>
+      <div class="card person"><div class="avatar" data-i="AA"><img src="gambar/arif.jpg" alt="Arif Aryaguna" onerror="this.remove()"></div><h3>Arif Aryaguna</h3><p>Penyusun materi</p></div>
+      <div class="card person"><div class="avatar" data-i="DP"><img src="gambar/domika.jpg" alt="Domika Putra" onerror="this.remove()"></div><h3>Domika Putra</h3><p>UI Designer</p></div>
+    </div>
+  </section>
+</main>
+
+<footer><a href="#top">Privacy</a><a href="#top">Terms</a></footer>
+<script src="js/cube.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
